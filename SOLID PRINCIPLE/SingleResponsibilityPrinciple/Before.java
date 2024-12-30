@@ -1,6 +1,6 @@
-  public class ZooEntity {
-    // "CHARACTERS"
-    // Staff
+public class ZooEntity {
+    //"CHARACTERS"
+    //Staff
     String name;
     Integer age;
     Gender gender;
@@ -9,30 +9,46 @@
     Role role;
     String shiftTime;
 
-    // Animal
+    //Animal
     String species;
+    Gender gender;
     String dietType;
     Boolean canFly;
+    Integer age;
     Boolean hasWings;
 
-    // Visitors
+    //Visitors
+    String name;
+    Integer age;
+    Gender gender;
     Ticket ticket;
     Integer visitingTime;
     Boolean isVIP;
 
-    // "BEHAVIOUR"
-    // Staff
-    void feedAnimal() {}
-    void cleanPremises() {}
-    void guidingPeople() {}
-    void ticketChecking() {}
+    //"BEHAVIOUR"
+    //Staff
+    void eat();
+    void poop();
+    void feedAnimal();
+    void cleanPremises();
+    void guidingPeople();
+    void sleep();
+    void ticketChecking();
 
-    // Animal
-    void roam() {}
-    void fly() {}
-    void eatTheVisitor() {}
+    //Animal
+    void eat();
+    void sleep();
+    void poop();
+    void roam();
+    void fly();
+    void fight();
+    void eatTheVisitor;
 
-    // Visitor
-    void getEatenByAnimal() {}
-    void throwLitter() {}
+    //Visitor
+    void roam();
+    void eat();
+    void getEatenByAnimal();
+    void throwLitter();
+    void petAnimal();
+
 }
